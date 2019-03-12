@@ -1,0 +1,227 @@
+
+
+
+
+*{
+	margin: 0;
+	padding:0;
+
+}
+
+/*LAYOUT FOR EVERY PAGE EXCEPT LANDING PAGE*/
+body{
+	display: grid;
+	grid-template-columns: 10% 1fr 1fr 10%;
+	grid-template-rows:180px 550px 550px 80px;
+	grid-gap: 2px;
+	grid-template-areas:
+	"header header header header"
+	"nav main main aside"
+	"nav main main aside"
+	"footer footer footer footer"
+
+}
+/*LAYOUT FOR EVERY PAGE EXCEPT LANDING PAGE*/
+.kid{
+	background-color: rgb(191,155,48);
+}
+.top{
+	grid-area: header;
+	background-image: url(../images/log0.png);
+	background-repeat: no-repeat;
+	background-size: 60%;
+	background-position: bottom;
+
+	
+
+}
+
+.side{
+	grid-area: nav;
+	display: flex;
+	flex-direction: column;
+
+
+}
+.rside{
+	grid-area: aside;
+
+}
+.middle{
+	grid-area: main;
+	
+
+}
+.bottom{
+	grid-area: footer;
+
+}
+
+
+nav a{
+	text-decoration: none;
+	padding-bottom: 5%;
+	padding-top: 10%;
+	text-align: center;
+	font-size: 2.5vw;
+	font-family: 'Lobster';
+	color: white;
+
+
+}
+.cast, #fullcast{
+	width: 30%;
+	height: 260px;
+	padding: 1%;
+	position: relative;
+	border-radius: 45%;
+}
+
+.para1, .para2{
+	display: flex;
+	flex-direction: row;
+	padding-top: 1%;
+	padding-right: 1%;
+}
+h1{
+	text-align: center;
+	margin-top: 1%;
+	font-family: 'Lobster';
+}
+
+.slide{
+	width: 40%;
+	height: 300px;
+	border-radius: 45%;
+}
+
+#sshow{
+	margin-left: 30%;
+	margin-top: .5%;
+}
+	
+.back{
+	margin-left: 35%;
+	font-family: 'Lobster';
+	font-size: 1vw;
+
+}
+.forward{
+	margin-left: 12%;
+	font-family: 'Lobster';
+	font-size: 1vw;
+
+}
+
+li, .info{
+	padding: 2%;
+	list-style: none;
+}
+span{
+	font-family: 'Lobster';
+
+}
+
+
+.mlist{
+	padding: 1%;
+	margin: 2%;
+	font-size: 2.5vw;
+	font-family: 'Lobster';
+	
+}
+.baf{
+	text-align: center;
+	font-size: 1.5vw;
+	margin-top: 1%;
+}
+
+input{
+	width: 15vw;
+	height: 2vw;
+}
+
+audio{
+	margin-left: 84%;
+	width: 15%;
+	
+}
+	
+.videos{
+	display: flex;
+	flex-wrap: wrap;
+
+}
+.ggvids{
+	width: 35vw;
+	
+
+	
+}
+.vidtxt{
+	font-size: 1.5vw;
+	font-family: 'Lobster';
+	padding: 2%;
+	text-align: center;
+	margin-top: 2%;
+
+}
+#cast{
+	text-align: center;
+	font-family: 'Lobster';
+
+}
+.modal_container{
+    position: absolute; 
+    width: 50vw;
+    text-align: center;
+    font-family: 'Lobster';
+    font-size: 6vw;
+    padding-left: 10%;
+    color: white;
+    display: none;
+
+   
+}
+.modal::before{
+    content: ' ';
+    position: absolute;
+    display: none;
+    background-color: rgba(191,155,43,.8);
+    height: 50vw;
+    width: 80vw;
+}
+
+.modal:target .modal_container{
+    display: block;
+
+}
+.modal:target:before{
+    display: block;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+footer a{
+	font-family: 'Lobster';
+	margin-left: 15%
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GG Landing</title>
+	
+
+	<!-- LINK TO FONT -->
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+	<!-- CSS FOR LANDING PAGE -->
+
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			display: flex;
+			flex-wrap: wrap;
+			z-index: 1;
+		}
+		div{
+			border: solid 3px rgb(191,155,48);
+			width:49.5vw;
+			height: 40vw;
+			border-radius: 1%;
+		}
+		.enter{
+			width: 100vw;
+			height: 80vw;
+			background-image: url("images/cheesecake.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			position: absolute;
+			z-index: -1;
+			
+		}
+		h1{
+			text-align: center;
+			padding-top: 40%;
+			font-size: 3vw;
+			font-family: 'Lobster';
+			color: rgb(191,155,48);
+			
+
+
+		}
+
+		body:hover .left{
+
+			animation: blanche 6s ease-in-out 3s infinite reverse;
+		}
+		body:hover .right{
+
+			animation: dorothy  6s ease-in-out 3s infinite reverse;
+		}
+		body:hover .bleft{
+
+			animation: rose 6s ease-in-out 3s infinite reverse;
+		}
+		body:hover .bright{
+
+			animation: sophia  6s ease-in-out 3s infinite reverse;
+		}
+
+
+
+
+		.left{
+			background-image: url("images/bd_cropd.jpg");
+			background-repeat: no-repeat;
+			background-size: 115%;
+			background-position: center;
+
+		}
+		.right{
+			background-image: url("images/dzp.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: right;
+
+
+		}
+		.bleft{
+			background-image: url("images/rn.jpeg");
+			background-repeat: no-repeat;
+			background-size: 101%;
+			background-position: center left bottom;
+
+
+		}
+		.bright{
+			background-image: url("images/sp_cropd.jpg");
+			background-repeat: no-repeat;
+			background-size: 115%;
+			background-position:  left;
+
+
+		}
+		
+
+		@keyframes blanche{
+			 0% {transform: rotate(0deg);}
+			 100%{transform: rotate(-90deg);}
+			 70%{transform: rotate(90deg); transform-origin: 25% -30%;}
+			
+		}
+		@keyframes dorothy{
+			 0% {transform: rotate(0deg);}
+			 100%{transform: rotate(90deg);}
+			 70%{transform: rotate(-90deg); transform-origin: 95% -30%;}
+			
+		} 
+		 @keyframes rose{
+		 	 0% {transform: rotate(0deg);}
+			 100%{transform: rotate(-90deg);}
+			 70%{transform: rotate(90deg); transform-origin: -25% -30%;}
+			
+		}
+		@keyframes sophia{
+			 0% {transform: rotate(0deg);}
+			 100%{transform: rotate(90deg);}
+			 70%{transform: rotate(-90deg); transform-origin: 95% -30%;}
+			
+		} 
+		
+	</style>
+<!-- CSS FOR LANDING PAGE -->
+	
+</head>
+<body>
+<a href="pages/home.html"><div class="left"></div></a>
+<a href="pages/home.html"><div class="right"></div></a>
+<a href="pages/home.html"><div class="bleft"></div></a>
+<a href="pages/home.html"><div class="bright"></div></a>
+
+<div class="enter"> 
+<h1>Click On Your Favorite Golden Girl To Enter</h1>
+
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
